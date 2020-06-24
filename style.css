@@ -1,0 +1,19 @@
+label {
+  font-weight: bold;
+}
+
+#button {
+  width: 100px;
+  padding: 10px;
+  background-color: coral;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+#InputCognome {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  background-color: lightgrey;
+  margin-right: 10px;
+}
