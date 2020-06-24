@@ -8,8 +8,15 @@ console.log(cognomi);
 
 btn.addEventListener("click", function(){
   var cognomeUtente = document.getElementById('InputCognome').value;
-  cognomi.push(cognomeUtente);
-  cognomi.sort();
-  document.getElementById('indice').innerHTML = "Ti trovi in posizione " + (cognomi.indexOf(cognomeUtente) + 1);
   console.log(cognomi);
+
+  if (isNaN(cognomeUtente) && cognomeUtente != "") {
+    cognomi.push(cognomeUtente);
+    cognomi.sort();
+    document.getElementById('indice').innerHTML = "Ti trovi in posizione " + (cognomi.indexOf(cognomeUtente) + 1);
+    console.log(cognomi);
+  } else {
+    alert("Errore");
+    document.getElementById('indice').innerHTML = "Inserisci un valore diverso";
+  }
 });
